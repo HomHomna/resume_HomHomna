@@ -1,0 +1,121 @@
+body {
+  font-family: "Inter";
+}
+
+h1, h2, h3, h4, p, ul {
+  margin: 0;
+  padding: 0;
+}
+
+h1 {
+  color: blue;
+}
+ p {
+  line-height: 1.4;
+ }
+img { width: 100%; }
+li { 
+  margin-left: 1.5rem;
+  padding: 0.15rem 0;
+}
+
+body {
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+.main-page {
+  display: grid;
+  grid-template-columns: 300px 1fr;
+  grid-gap: 2rem;
+  // margin-top: 5rem;
+}
+
+.photo{
+  text-align: center;
+  img {
+    width: 210px;
+    height: 210px;
+    border-radius: 130px;
+    object-fit: cover;
+  }
+    
+}
+
+aside {
+  background-color: rgb(238, 232, 232);
+  padding: 3.5rem 2rem 0 2rem;
+  section {
+    margin-bottom: 2rem;
+
+    h3 {
+      font-family: "Roboto slab";
+      margin-bottom: 0.5rem;
+    }
+  }
+
+  .contact-address {
+    padding-bottom: 0.75rem;
+  }
+  .education {
+    div:nth-child(3) {
+      padding-bottom: 1rem;
+    }
+    &-university {
+      width: 100%;
+      span:nth-child(2) { float: left; }
+    }
+  }
+}
+
+main {
+  padding-left: 2rem;
+  padding-top: 3.5rem;
+  .content {
+    margin-bottom: 2rem;
+
+    h1, h2 {
+      font-family: "Noto Sans";
+    }
+    h1 {
+      font-size: 54px;
+      color: gray;
+    }
+    h2 {
+      font-size: 24px;
+    }
+    h3 {
+      font-family: "Roboto slab";
+      margin-bottom: 0.5rem;
+    }
+    .work-title {
+      color: #454545;
+      padding-top: 0.5rem;
+      padding-bottom: 0.33rem;
+    }
+    .company {
+      display: flex;
+      justify-content: space-between;
+    }
+  }
+
+  .content-top {
+    margin-bottom: 3rem;
+    p { padding-top: 1.5rem; }
+  }
+
+  .content-skills ul {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .project {
+    padding-bottom: 1.5rem;
+    &:last-child { padding-bottom: 0; }
+    
+    h4 {
+      font-family: "Noto Sans";
+      padding-bottom: 0.5rem;
+    }
+  }
+}
