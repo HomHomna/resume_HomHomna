@@ -31,22 +31,29 @@ body {
   // margin-top: 5rem;
 }
 
-.photo{
+.my-photo{
   text-align: center;
+  padding-left: 0.5rem;
   img {
     width: 210px;
     height: 210px;
     border-radius: 130px;
     object-fit: cover;
+
   }
     
 }
 
 aside {
-  background-color: rgb(238, 232, 232);
-  padding: 3.5rem 2rem 0 2rem;
+  //background-color: rgb(171, 120, 78);
+  margin-top: 2rem;
+  border-style: solid;
+  border-width: 4px;
+  border-color:rgb(171, 120, 78) ;
+  padding: 3rem 2rem 0rem 1.5rem;
   section {
     margin-bottom: 2rem;
+    
 
     h3 {
       font-family: "Roboto slab";
@@ -76,10 +83,11 @@ main {
 
     h1, h2 {
       font-family: "Noto Sans";
+      
     }
     h1 {
       font-size: 54px;
-      color: gray;
+      color: rgb(171, 120, 78);
     }
     h2 {
       font-size: 24px;
@@ -87,6 +95,10 @@ main {
     h3 {
       font-family: "Roboto slab";
       margin-bottom: 0.5rem;
+    }
+    hr {
+      color: rgb(171, 120, 78);
+      border-top: 2.5px solid;
     }
     .work-title {
       color: #454545;
