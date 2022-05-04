@@ -3,7 +3,7 @@ import Slider from "react-slick";
 
 const myPhoto = new URL('/assets/myPhoto.jpg', import.meta.url);
 
-export function Main(){
+export default function Main(){
     const settings = {
         dots: true,
         infinite: true,
