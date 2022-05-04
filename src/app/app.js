@@ -1,15 +1,29 @@
-import {createRoot} from 'react-dom/client';
 import React from "react";
+import Slider from "react-slick";
 
 const myPhoto = new URL('/assets/myPhoto.jpg', import.meta.url);
 
-function Main(){
+export function Main(){
+    const settings = {
+        dots: true,
+        infinite: true,
+        speed: 500,
+        slidesToShow: 1,
+        slidesToScroll: 1
+    };
     return(
     <div className="main-page">
         <aside>
             <section>
                 <div className="my-photo">
-                    <img src={myPhoto} alt="HomHomna"/>
+                    <Slider {...settings}>
+                    <div>
+                        <img src={myPhoto} alt="HomHomna"/>
+                    </div>
+                    <div>
+                        <img src={myPhoto} alt="HomHomna"/>
+                    </div>
+                    </Slider>
                 </div>
             </section>
             <section>
@@ -98,6 +112,3 @@ function Main(){
     </div>
     )
 }
-const main = document.getElementById("main");
-const root = createRoot(main);
-root.render(<Main/>)
