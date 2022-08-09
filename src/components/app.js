@@ -1,34 +1,18 @@
 import React from "react";
-import Slider from "react-slick";
+import SlidePhotos from "./SlidePhotos";
 
-const myPhoto = new URL('/assets/myPhoto.jpg', import.meta.url);
 
 export default function Main(){
-    const settings = {
-        dots: true,
-        infinite: true,
-        speed: 500,
-        slidesToShow: 1,
-        slidesToScroll: 1
-    };
+   
     return(
     <div className="main-page">
         <aside>
             <section>
-                <div className="my-photo">
-                    <Slider {...settings}>
-                    <div>
-                        <img src={myPhoto} alt="HomHomna"/>
-                    </div>
-                    <div>
-                        <img src={myPhoto} alt="HomHomna"/>
-                    </div>
-                    </Slider>
-                </div>
+                <SlidePhotos/>
             </section>
             <section>
                 <h3>Contact</h3>
-                <div className="contact-address">34/243, Suwinthawong Road, Krathum Rai, Nong Chok, Bangkok, 10530</div>
+                <div className="contact-address">34/218, Suwinthawong Road, Krathum Rai, Nong Chok, Bangkok, 10530</div>
                 <div>Email : sasawat.wanatsawan@gmail.com</div>
                 <div>Line : EARTH.K-ON</div>
                 <div>Facebook : Sasawat Thurarat</div>
@@ -66,7 +50,7 @@ export default function Main(){
         <main>
             <div className="content content-top">
                 <h1>Sasawat Thurarat</h1>
-                <h2>Full Stack Software Developer(maybe)</h2>
+                <h2>Front End Software Developer</h2>
                 <p>I have knowledge and experience in developing JavaScript web applications. I am interested in web applications and front-end developers. I am eager to develop while challenging myself by applying knowledge and problem solving to my work. I am open to new knowledge or new solutions. and ready to learn to work as a team.</p>
             </div>
 
@@ -93,6 +77,7 @@ export default function Main(){
                     <h4>Ruby on Rails web application</h4>
                     <ul>
                         <li>ToDo application that run as a single page app</li>
+                        <li>Test website Sangdad with framework Playwright</li>
                     </ul>
                 </div>
 
@@ -102,8 +87,6 @@ export default function Main(){
                 <h3>Skills</h3>
                 <hr/>
                 <ul>
-                    <li>Ruby on Rails</li>
-                    <li>SQL</li>
                     <li>JavaScript</li>
                     <li>HTML5/CSS3</li>
                 </ul>

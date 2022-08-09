@@ -131,3 +131,30 @@ main {
     }
   }
 }
+
+.photo {
+  width: 240px;
+  height: 250px;
+  position: relative;
+  overflow: hidden;
+  border-radius: 50%;
+  img {
+  display: flex;
+  margin: auto;
+  height: 100%;
+  width: auto;
+  }
+}
+
+.arrow{
+  display: flex;
+  justify-content: space-between;
+  .arrow-prev {
+    cursor: pointer;
+    width: 20px;
+  }
+  .arrow-next {
+    cursor: pointer;
+    width: 20px;
+  }
+}
