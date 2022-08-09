@@ -43,6 +43,7 @@ export default function Main(){
                     <li>Valorant</li>
                     <li>League of Legends</li>
                     <li>Dota2</li>
+                    <li>Draw</li>
                 </ul>
             </section>
         </aside>
